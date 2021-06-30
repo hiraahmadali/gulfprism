@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <form #form='ngForm' class="mb-4" autocomplete="off" method="POST" (submit)="onSubmit(form)">
+        <div class="form-group">
+          <label>CompanyName</label>
+          <input class="form-control" #CompanyName="ngModel" name="CompanyName" [(ngModel)]="formModel.CompanyName" required>
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input class="form-control" #Phone="ngModel" name="Phone" [(ngModel)]="formModel.Phone">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input class="form-control" #Email="ngModel" name="Email" [(ngModel)]="formModel.Email">
+        </div>
+        <div class="form-group">
+          <label>Address</label>
+          <input class="form-control" #Address="ngModel" name="Address" [(ngModel)]="formModel.Address">
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <input class="form-control" #Description="ngModel" name="Description" [(ngModel)]="formModel.Description">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-8 offset-md-2">
+            <button type="submit" class="btn btn-primary btn-lg btn-block" [disabled]="form.invalid">Add Company</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
