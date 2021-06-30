@@ -1,7 +1,15 @@
-<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand text-white" [routerLink]="['/home']">GULF Prism</a>
-  <a class="nav-item text-white" routerLink="company">Company</a>
-  <a class="nav-item text-white" routerLink="orders">Orders</a>
+<nav class="navbar navbar-expand-sm bg-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="navbar-brand text-white" [routerLink]="['/home']">GULF Prism</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="company">Company</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="orders">Orders</a>
+    </li>
+  </ul>
   <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Logout</button>
 </nav>
 

@@ -1,10 +1,11 @@
+<div class="col-md-6">
 <p>
-  <a class="btn btn-danger my-2 my-sm-0" routerLink="../add-company">Add Company</a>
+  <a class="btn btn-secondary my-2 my-sm-0" routerLink="../add-company">Add Company</a>
 </p>
 <p *ngIf="companies.length === 0">
   No Record Found
 </p>
-  <table border="1" *ngIf="companies.length > 0">
+  <table class="table" *ngIf="companies.length > 0">
     <tr>
       <th>
         Id
@@ -52,6 +53,7 @@
       </td>
     </tr>
   </table>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">

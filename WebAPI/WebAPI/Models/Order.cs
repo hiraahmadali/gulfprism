@@ -16,19 +16,16 @@ namespace WebAPI.Models
         public int CompanyId { get; set; }
 
         [StringLength(255)]
-        public string CompanyName { get; set; }
+        public string Amount { get; set; }
 
         [StringLength(255)]
-        public string Phone { get; set; }
+        public string Product { get; set; }
 
         [StringLength(255)]
-        public string Email { get; set; }
+        public string Quantity { get; set; }
 
         [StringLength(255)]
-        public string Address { get; set; }
-
-        [StringLength(255)]
-        public string Description { get; set; }
+        public string TransferAmount { get; set; }
 
         public Company Company { get; set; }
     }
